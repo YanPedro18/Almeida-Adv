@@ -1,0 +1,255 @@
+
+@media only screen and (max-width: 1280px) {
+    .linha {
+        transform: translate(56rem, -13rem);
+    }
+    .zap {
+        width: 19%;
+    }
+    .text-05 > p {
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    nav > img {
+        max-width: 14%;
+    }
+    nav > ul > li > a {
+        font-size: 1.0rem;
+    }
+    .text-01 > h1 {
+        font-size: 5.0rem;
+    }
+    .sect-01 {
+        height: 115vh;
+    }
+    .linha {
+        transform: translate(44rem, -9rem);
+    }
+    .text-04 > img {
+        width: 49%;
+    }
+    .text-04 > p {
+        font-size: 0.9rem;
+    }
+    .sect-02 > h1 {
+        font-size: 1.5rem;
+    }
+    .sect-02 > h1::before {
+        bottom: -202px;
+        left: 29.6rem;
+    }
+    .sect-03 > h1::before {
+        bottom: -547px;
+        left: 29.2rem;
+    }
+    .sect-03 > h1 {
+        font-size: 1.5rem;
+    }
+    .sect-03 > p {
+        font-size: 0.9rem;
+    }
+    .itens-01 > h1 {
+        font-size: 0.9rem;
+    }
+    .itens-01 > img {
+        max-width: 10%;
+    }
+    .itens-01 > ul > li {
+        font-size: 0.6rem;
+    }
+    .sect-04 > h1 {
+        font-size: 1.5rem;
+        transform: translateY(10px);
+    }
+    .zap {
+        width: 20%;
+    }
+    .zap > a {
+        font-size: 1.0rem;
+    }
+    .zap img {
+        width: 15%;
+    }
+    .itens-02 > h6 {
+        font-size: 0.9rem;
+    }
+    .itens-02 > p {
+        font-size: 0.8rem;
+    }
+    .sect-04 {
+        height: 40vh;
+    }
+    .sect-05-itens > img {
+        width: 20%;
+    }
+    .text-05 h6 {
+        font-size: 0.7rem;
+    }
+    .text-05 > p {
+        width: 200px;
+        font-size: 0.7rem;
+    }
+    footer > p {
+        font-size: 0.8rem;
+    }
+    .linha2 {
+        height: 6px;
+    }
+
+   
+}
+
+
+
+@media only screen and (max-width: 440px) and (min-width: 320px) {
+    .linha {
+        display: none;
+        overflow: hidden;
+    }
+    .itens-02 {
+        width: 26%;
+    }
+    .sect-01 {
+        height: 93vh;
+    }
+    .itens-01 > img {
+        max-width: 20%;
+    }
+    .itens-01 > h1 {
+        font-size: 1.4rem;
+    }
+    .text-01 > h1 {
+        font-size: 2rem;
+    }
+    .text-01 > h2 {
+        font-size: 1.9rem;
+    }
+    .text-02 {
+        text-align: center;
+        flex-direction: column;
+    }
+    .text-03 {
+        margin: 0 auto;
+    }
+    .text-04 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-04 > p {
+        margin: 5% auto;
+    }
+    .text-04 > img {
+        width: 100%;
+    }
+    .itens-01 > ul > li {
+        font-size: 0.877rem;
+    }
+    .itens-03{
+        margin-top: 5%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .itens-03 > img {
+        max-width: 7%;
+    }
+    .sect-04 {
+        height: 20vh;
+    }
+    .sect-05-itens {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .sect-05-itens > img {
+        width: 45%;
+    }
+    .zap {
+        width: 40%;
+        height: 20%;
+    }
+    footer > p {
+        margin-top: 5%;
+        text-align: center;
+    }
+    #btn-mobile {
+        display: block;
+    }
+    #nav.active #menu {
+        flex-direction: column;
+        height: calc(50vh - 30px);
+        visibility: visible;
+        transition: .2s !important;
+    }
+    #menu {
+        overflow: hidden ;
+        display: block;
+        position: absolute;
+        width: 25%;
+        font-size: 2.3rem;
+        right: 0px;
+        top: 64px;
+        border-top: 2px solid #D1A345;
+        height: 0px;
+        transition: .6s !important;
+        z-index: 1000;
+        background-color: #0f2f24be;
+        visibility: hidden;
+    }
+    #menu > li{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+        width: 31vh; 
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .1rem;
+        font-size: 1.1rem;
+        color: white;
+        margin-right: 10px;
+        margin-top: 26px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    #hamburguer {
+        color: #D1A345;
+        border-top: 2px solid;
+        width: 25px;
+        display: block;
+    }
+    #hamburguer::after,
+    #hamburguer::before {
+        margin-top: 20%;
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        transition: all 0.5s;
+        background-color: #D1A345;
+        position: relative;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+        transition: all 0.5s;
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+        transition: all 0.5s;
+    }
+    .sect-05-itens > img {
+        max-width: 40%;
+        margin-right: 0%;
+    }
+    .zap-button {
+        width: 13%;
+        right: 20px;
+        bottom: 20px;
+    }
+}
